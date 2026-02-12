@@ -13,6 +13,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+
     public static final Block ARCTIC_CRYSTAL_BLOCK = registerBlock(
             "arctic_crystal_block",
             new Block(AbstractBlock.Settings
@@ -20,6 +21,7 @@ public class ModBlocks {
                     .luminance(state -> 8)
             )
     );
+
 
 
     private static Block registerBlock(String name, Block block) {
