@@ -10,6 +10,14 @@ A simple Minecraft mod built with Fabric that adds a custom energy drink item to
 - Custom crafting recipe
 - Built for Minecraft 1.21.1 (Fabric)
 
+## Why?
+
+Mostly for learning, experimenting, and having fun with mod development.
+
+*Some people say the energy comes from ancient underground civilizations.  
+We can neither confirm nor deny.*
+
+
 ## Development
 
 - Minecraft: 1.21.1
