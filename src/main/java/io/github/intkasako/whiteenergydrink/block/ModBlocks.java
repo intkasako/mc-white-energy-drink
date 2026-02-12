@@ -18,9 +18,12 @@ public class ModBlocks {
             "arctic_crystal_block",
             new Block(AbstractBlock.Settings
                     .copy(Blocks.AMETHYST_BLOCK)
-                    .luminance(state -> 8)
+                    .strength(0.35f, 1.0f)   // hardness bem menor
+                    .luminance(state -> 9)
+                    .nonOpaque().requiresTool()
             )
     );
+
 
 
 
