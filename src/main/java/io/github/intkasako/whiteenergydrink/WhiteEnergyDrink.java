@@ -1,5 +1,6 @@
 package io.github.intkasako.whiteenergydrink;
 
+import io.github.intkasako.whiteenergydrink.block.ModBlocks;
 import io.github.intkasako.whiteenergydrink.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,7 @@ public class WhiteEnergyDrink implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 
 	}
 }

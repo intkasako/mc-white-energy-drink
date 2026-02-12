@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "white_energy_drink:block/arctic_crystal_block"
+  }
+}
