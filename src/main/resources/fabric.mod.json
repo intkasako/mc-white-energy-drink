@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "white_energy_drink",
+	"version": "${version}",
+	"name": "White Energy Drink",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/white_energy_drink/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.intkasako.whiteenergydrink.WhiteEnergyDrink"
+		],
+      "client":
+              ["io.github.intkasako.whiteenergydrink.WhiteEnergyDrinkClient"],
+		"fabric-datagen": [
+			"io.github.intkasako.whiteenergydrink.WhiteEnergyDrinkDataGenerator"
+		]
+	},
+	"mixins": [
+		"white_energy_drink.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
