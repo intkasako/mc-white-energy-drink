@@ -10,18 +10,25 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item ARCTIC_ESSENCE = registerItem("arctic_essence", new Item(new Item.Settings()));
+    public static final Item ARCTIC_ESSENCE =
+            registerItem("arctic_essence", new Item(new Item.Settings()));
 
-    private static Item registerItem(String name, Item item){
+    public static final Item WHITE_ENERGY_DRINK =
+            registerItem("white_energy_drink", new Item(new Item.Settings()));
+
+    private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WhiteEnergyDrink.MOD_ID, name), item);
     }
 
-    public static void  registerModItems(){
+    public static void registerModItems() {
         WhiteEnergyDrink.LOGGER.info("Registering Mod Items for " + WhiteEnergyDrink.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(ARCTIC_ESSENCE);
         });
-    }
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(WHITE_ENERGY_DRINK);
+        });
+    }
 }
