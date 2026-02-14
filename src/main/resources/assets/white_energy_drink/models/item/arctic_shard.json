@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "white_energy_drink:item/arctic_essence"
+    "layer0": "white_energy_drink:item/arctic_shard"
   }
 }

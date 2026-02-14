@@ -16,6 +16,9 @@ public class ModItems {
     public static final Item WHITE_ENERGY_DRINK =
             registerItem("white_energy_drink", new Item(new Item.Settings()));
 
+    public static final Item ARCTIC_SHARD =
+            registerItem("arctic_shard", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WhiteEnergyDrink.MOD_ID, name), item);
     }
@@ -29,6 +32,9 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(WHITE_ENERGY_DRINK);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(ARCTIC_SHARD);
         });
     }
 }
