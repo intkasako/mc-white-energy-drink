@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "B  ",
+    "DA ",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blue_ice"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "white_energy_drink:arctic_essence"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "white_energy_drink:arctic_shard"
+  }
+}
